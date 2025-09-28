@@ -1,0 +1,203 @@
+/* Beginner-friendly style.css */
+/* Basic colors used throughout */
+:root {
+  --dark: #1F2937;   /* Dark blue background for header, hero, footer */
+  --light: #F9FAF8;  /* Light text */
+  --muted: #E5E7EB;  /* Light grey background for quote section */
+  --primary: #3882F6;/* Button blue */
+}
+
+/* ======== GLOBAL ======== */
+body {
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: white;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* ======== HEADER ======== */
+.header {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 20px 0;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+/* ======== HERO ======== */
+.hero {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 20px 0;
+}
+
+.hero-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background-color: #97afdf;
+}
+
+.hero-box {
+  background-color: #374151;
+  color: var(--muted);
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* ======== INFO CARDS ======== */
+.info {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.card {
+  width: 22%;
+}
+
+.square {
+  width: 100%;
+  padding-top: 100%; /* makes it a square */
+  background-color: white;
+  border: 3px solid var(--primary);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* ======== IMAGES ======= */
+img {
+  border-radius: 3%;
+}
+
+
+/* ======== QUOTE ======== */
+.quote {
+  background-color: var(--muted);
+  padding: 80px 0;
+  text-align: center;
+  font-style: italic;
+}
+
+.quote-text {
+  font-size: 24px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.quote-author {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* ======== CALL TO ACTION ======== */
+.cta {
+  background-color: var(--primary);
+  color: white;
+  padding: 40px 0;
+}
+
+.cta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: var(--primary);
+}
+
+/* ======== FOOTER ======== */
+.footer {
+  background-color: var(--dark);
+  color: var(--muted);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+
+
+/* ======== RESPONSIVE (Optional beginner step) ======== */
+@media (max-width: 768px) {
+  .hero-row,
+  .cards,
+  .cta-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,81 @@
+<!-- contact.html — Beginner-friendly Contact Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Kiratu Computer Science School</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <div class="header">
+    <div class="container header-row">
+      <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;"><img src="k2cs1b.png" alt="Website Logo" width="120"></a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="fees.html">Fees</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="container hero-row">
+      <div class="hero-text">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Whether you have questions, feedback, or want to join our classes — reach out below.</p>
+        <a class="btn" href="#contact-form">Get in touch</a>
+      </div>
+      <div class="hero-box"></div><img src="contact.us2.png" alt="Website Logo" width="250">
+    </div>
+  </div>
+
+  <!-- CONTACT FORM SECTION -->
+  <div class="info" id="contact-form">
+    <div class="container" style="text-align:left; max-width:700px;">
+      <h2>Send Us a Message</h2>
+      <p>Fill out the form below and we’ll get back to you as soon as possible.</p>
+
+      <form action="#" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" style="width:100%; padding:10px; margin:8px 0;"><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" style="width:100%; padding:10px; margin:8px 0;"><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message here..." style="width:100%; padding:10px; margin:8px 0;"></textarea><br>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+
+      <p style="margin-top:20px; font-size:14px; color:#555;">
+        <!-- Note: This form is for demonstration only — it does not send real messages yet. -->
+      </p>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <div class="container cta-row">
+      <div class="cta-text">
+        <h3>Prefer Social Media?</h3>
+        <p>You can also contact us directly at <strong>@kiratucs_school on X, Facebook, Tiktok and Instagram</strong></p>
+      </div>
+      <div>
+        <a class="btn btn-outline" href="index.html">Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="container">© Kiratu Computer Science School 2025</div>
+  </div>
+</body>
+</html>
